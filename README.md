@@ -1,11 +1,18 @@
-# Eixo-5
-Arquitetura de Dados em Nuvem
+# Projeto de Arquitetura de Dados em Nuvem: Consultoria CodeCafé – Análise de Dados para Expansão Internacional
 
-# TÍTULO DO PROJETO
-`CURSO`
-`ANO/SEMESTRE`
+`UNIVERSIDADE CATÓLICA DE MINAS GERAIS`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+`INSTITUTO DE CIÊNCIAS EXATAS E INFORMÁTICA`
+
+`CURSO: Tecnologia em Banco de Dados`
+
+`DISCIPLINA: Projeto - Arquitetura de Dados em Nuvem`
+
+`SEMESTRE: 5º`
+
+
+<p align="justify">
+Este projeto objetiva colocar um engenheiro de dados em formação em contato com algumas das principais ferramentas de uma infraestrutura moderna de dados, organizando-as em um processo de Big Data Analytics. No contexto de uma sociedade cada vez mais digital e conectada, a quantidade de dados tem crescido rapidamente (velocidade), originando-se nos sistemas de informação que amparam os negócios, nos sensores de Internet das Coisas (IoT), nas redes sociais que utilizam diferentes mídias como texto, imagem, vídeo e áudio (variedade) e em grande quantidade (volume). Estes três Vs tradicionalmente caracterizam o Big Data. E a necessidade de levá-los à condição de serem analisados é papel de um Engenheiro de Dados.</p>
 
 ## Integrantes
 * Alexandre Guzmán Siácara
