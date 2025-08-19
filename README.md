@@ -1,4 +1,4 @@
-# Projeto de Arquitetura de Dados em Nuvem: Consultoria CodeCafé – Análise de Dados para Expansão Internacional
+# Projeto de Arquitetura de Dados em Nuvem: Consultoria CodeCafé – Análise experimental de comparação entre índices de massa foliar obtidos através de imagens de satélite e celular.
 
 `UNIVERSIDADE CATÓLICA DE MINAS GERAIS`
 
@@ -12,7 +12,7 @@
 
 
 <p align="justify">
-Este projeto objetiva colocar um engenheiro de dados em formação em contato com algumas das principais ferramentas de uma infraestrutura moderna de dados, organizando-as em um processo de Big Data Analytics. No contexto de uma sociedade cada vez mais digital e conectada, a quantidade de dados tem crescido rapidamente (velocidade), originando-se nos sistemas de informação que amparam os negócios, nos sensores de Internet das Coisas (IoT), nas redes sociais que utilizam diferentes mídias como texto, imagem, vídeo e áudio (variedade) e em grande quantidade (volume). Estes três Vs tradicionalmente caracterizam o Big Data. E a necessidade de levá-los à condição de serem analisados é papel de um Engenheiro de Dados.</p>
+O monitoramento da qualidade das pastagens é um fator essencial para a eficiência produtiva no setor agropecuário, especialmente em sistemas de criação de gado. Com o avanço das tecnologias de sensoriamento remoto e da popularização de dispositivos móveis com câmeras de alta resolução, tornou-se possível coletar dados visuais de diferentes fontes para análise ambiental. Este projeto propõe uma análise experimental comparativa entre índices de massa foliar obtidos por meio de imagens de satélite e fotografias capturadas por celular, com o objetivo de avaliar a viabilidade do uso combinado dessas fontes na análise de dados sobre pastagens. A proposta visa contribuir para o desenvolvimento de soluções acessíveis e eficazes para o manejo inteligente de áreas de pasto, utilizando ferramentas de ciência de dados e processamento de imagens com Python.</p>
 
 ## Integrantes
 * Alexandre Guzmán Siácara
