@@ -1,4 +1,4 @@
-# Projeto de Arquitetura de Dados em Nuvem: Consultoria CodeCafé – Análise experimental de comparação entre índices de massa foliar obtidos através de imagens de satélite e celular.
+# Projeto de Arquitetura de Dados em Nuvem: Análise experimental de comparação entre índices de massa foliar obtidos através de imagens de satélite e celular.
 
 `UNIVERSIDADE CATÓLICA DE MINAS GERAIS`
 
