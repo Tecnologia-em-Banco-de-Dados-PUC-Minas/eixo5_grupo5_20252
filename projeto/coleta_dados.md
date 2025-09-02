@@ -5,7 +5,8 @@ Nesse projeto, a coleta de dados foi feita de duas formas, o que permitiu uma an
 
 ## Imagens de Campo
 
-Foram tiradas, *in loco*, usando um celular. A ideia era ter imagens bem de perto, com alta resolução, para entender a massa foliar em condições reais, em espaços delimitados (piquetes). Elas foram extraídas de um repositório privado no GitHub do projeto **AgroBrain Biomass: Sistema Inteligente de Análise de Pastagens**.
+<p align="justify">
+Foram tiradas, *in loco*, usando um celular. A ideia era ter imagens bem de perto, com alta resolução, para entender a massa foliar em condições reais, em espaços delimitados (piquetes). Elas foram extraídas de um repositório privado no GitHub do projeto **AgroBrain Biomass: Sistema Inteligente de Análise de Pastagens**.</p>
 
 ## Imagens de Satélite
 
