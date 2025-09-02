@@ -9,7 +9,7 @@ Foram tiradas, *in loco*, usando um celular. A ideia era ter imagens bem de pert
 
 ## Imagens de Satélite
 
-Para a análise em larga escala, usamos imagens obtidas via satélite. Elas foram extraídas de um repositório privado no GitHub do projeto **AgroBrain Biomass: Sistema Inteligente de Análise de Pastagens**.
+Para a análise em larga escala, usamos imagens obtidas via satélite (Sentinel-2). Elas foram extraídas de um repositório privado no GitHub do projeto **AgroBrain Biomass: Sistema Inteligente de Análise de Pastagens**.
 
 A combinação dessas duas fontes — uma de perto (celular) e outra de longe (satélite) — é o que torna a análise experimental possível, nos permitindo comparar e validar os índices de massa foliar de forma mais precisa.
 
