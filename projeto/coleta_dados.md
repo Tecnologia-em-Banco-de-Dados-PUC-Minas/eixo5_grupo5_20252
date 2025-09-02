@@ -1,9 +1,8 @@
-
-# Coleta de Dados #
+# Coleta de Dados
 
 Nesse projeto, a coleta de dados foi feita de duas formas, o que permitiu uma análise comparativa bem completa. Basicamente, pegamos dados de duas fontes diferentes:
 
-## Imagens de Campo ##
+## Imagens de Campo
 
 Foram tiradas na hora, *in loco*, usando um celular. A ideia era ter imagens bem de perto, com alta resolução, para entender a massa foliar em condições reais.
 
@@ -25,4 +24,7 @@ A gente pensou em uma estratégia de gerenciamento que segue alguns passos:
 
 - **Qualidade**: As imagens têm que ter uma resolução mínima e boa iluminação.
 - **Segurança**: O acesso ao repositório do GitHub e aos dados é restrito, só quem precisa tem acesso.
+
+
+
 
