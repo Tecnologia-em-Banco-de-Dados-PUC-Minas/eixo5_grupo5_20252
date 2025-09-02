@@ -13,8 +13,6 @@ Para a análise em larga escala, usamos imagens obtidas via satélite. Elas fora
 
 A combinação dessas duas fontes — uma de perto (celular) e outra de longe (satélite) — é o que torna nossa análise experimental possível, nos permitindo comparar e validar os índices de massa foliar de forma mais precisa.
 
----
-
 # Governança e Modelo de Dados
 
 Para manter o projeto organizado e os dados seguros, criamos um plano de governança de dados. É tipo um manual que define as regras do jogo: como os dados devem ser coletados, processados e armazenados, e quem é responsável por cada parte.
