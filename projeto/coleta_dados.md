@@ -25,6 +25,9 @@ Para garantir a qualidade e consistência dos dados, as imagens de celular são 
 
 Esses índices são posteriormente convertidos em valores médios por imagem. Cada registro é vinculado ao piquete correspondente, permitindo rastreabilidade completa entre imagem e análise laboratorial.
 
+O **tratamento de dados** deste projeto é executado em uma máquina local dedicada, escolhida pela sua capacidade de processamento para manipular o volume de imagens de alta resolução, superando as limitações de ambientes de nuvem gratuitos como Google Colab. Os dados são **armazenados e versionados** em um repositório do GitHub, são processados por meio de algoritmos em Python desenvolvidos na IDE **Visual Studio Code**.
+
+Utilizamos um conjunto de bibliotecas especializadas para todo o fluxo de tratamento: **NumPy** para calcular os índices de vegetação (como GLI e ExG) pixel a pixel e agregar suas médias, **Pandas** para integrar esses resultados com os dados laboratoriais de massa foliar, criando um conjunto consolidado e **Scikit-learn e Matplotlib** para a análise e modelagem subsequentes. Essa abordagem garante um pipeline robusto, controlado e eficiente, desde a imagem bruta até os dados prontos para análise.
 
 ### Governança de Dados
 
