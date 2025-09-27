@@ -5,7 +5,7 @@ O pré-processamento de dados é uma etapa fundamental em qualquer projeto de Ma
 No contexto deste projeto, que busca analisar a nutritividade de um pasto a partir de imagens, o pré-processamento é responsável por reduzir ruídos, organizar informações e extrair estatísticas relevantes,
 possibilitando maior precisão na etapa de análise e treinamento dos modelos.  
 
----
+
 
 ## Ferramentas Utilizadas  
 
@@ -18,7 +18,7 @@ As bibliotecas empregadas foram:
 - **Matplotlib** → Visualização de dados e gráficos, permitindo observar distribuições, estatísticas e padrões visuais dos índices calculados.  
 - **Scikit-learn (sklearn)** → Biblioteca voltada para Machine Learning, utilizada especialmente para apoiar métricas estatísticas e preparação dos dados.  
 
----
+
 
 ## Etapas do Pré-processamento  
 
@@ -31,13 +31,11 @@ Por meio de funções específicas, foram realizados cálculos de estatísticas 
 a variabilidade dos dados e fornecer uma base sólida para análises posteriores.  
 
 ### 3. Separação de espectros de cores e cálculo de índices  
-Outra função foi responsável por:  
-- Realizar um **novo recorte central da imagem**;  
+Outra função foi responsável por:    
 - Separar os espectros de cores **RGB (Red, Green, Blue)**;  
-- Calcular os **cinco índices necessários** para a análise de nutritividade;  
+- Calcular os **5 índices necessários** para a análise;  
 - Gerar estatísticas descritivas para cada índice calculado.  
-
-### 4. Organização dos dados em tabela  
+  
 Os resultados obtidos foram organizados em uma **tabela estruturada com a biblioteca Pandas**, reunindo todas as estatísticas calculadas. Essa tabela representa o conjunto de dados
 “limpos” e prontos para serem utilizados nas próximas etapas de análise e treinamento dos algoritmos de Machine Learning.  
 
