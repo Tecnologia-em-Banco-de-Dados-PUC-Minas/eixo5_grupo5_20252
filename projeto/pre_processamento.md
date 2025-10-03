@@ -14,10 +14,11 @@ O pré-processamento foi realizado inteiramente na linguagem **Python**, utiliza
 As bibliotecas empregadas foram:  
 
 - **Pandas** → Manipulação, organização e estruturação dos dados em formato tabular (DataFrames), facilitando análises estatísticas e geração de tabelas finais.  
-- **NumPy** → Operações matemáticas e manipulação eficiente de arrays, servindo de base para cálculos matriciais e vetoriais.  
+- **NumPy** → Operações matemáticas e manipulação eficiente de arrays, servindo de base para cálculos matriciais e vetoriais.
+- **Scikit-image** → Empregada no processamento de imagens, foi utilizada no recorte da imagem e extração das bandas RGB.
 - **Matplotlib** → Visualização de dados e gráficos, permitindo observar distribuições, estatísticas e padrões visuais dos índices calculados.  
 - **Scikit-learn (sklearn)** → Biblioteca voltada para Machine Learning, utilizada especialmente para apoiar métricas estatísticas e preparação dos dados.  
-
+- **Tensorflow** → Biblioteca principal utilizada para o desenvolvimento e treinamento dos modelos de deep learning, sendo referência na área por sua flexibilidade e desempenho.
 
 
 ## Etapas do Pré-processamento  
