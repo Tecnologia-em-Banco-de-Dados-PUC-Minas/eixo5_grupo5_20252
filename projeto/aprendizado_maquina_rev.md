@@ -1,4 +1,25 @@
-# Aprendizado de Maquina
+## **Ferramentas e Preparação dos Dados para Aprendizagem de Máquina**
+
+Na etapa de **aprendizagem de máquina** do projeto *“Análise experimental comparativa entre os índices de massa foliar obtidos por imagens de satélite e de celular”*, foi utilizada uma base de dados previamente estruturada a partir do pré-processamento das imagens. Esse pré-processamento envolveu:
+
+- **Recorte central das imagens**, visando padronizar a área de análise;
+- **Cálculo de estatísticas descritivas** dos pixels, como média, desvio padrão e variância;
+- **Separação dos espectros de núcleos** relevantes para a vegetação;
+- **Cálculo de índices de massa foliar**, como NDVI e outros índices espectrais.
+
+Os resultados dessas operações foram organizados em uma **tabela estruturada com a biblioteca Pandas**, reunindo todas as estatísticas calculadas por imagem. Essa tabela representa o conjunto de dados “limpos” e prontos para serem utilizados na modelagem preditiva.
+
+Para a etapa de **aprendizado de máquina**, foram explorados dois tipos de algoritmos:
+
+### Redes Neurais Convolucionais (CNN)
+Utilizadas para extrair padrões espaciais e visuais diretamente das imagens, as CNNs são especialmente eficazes na análise de dados visuais complexos. Foram aplicadas para identificar características relevantes nas imagens que se correlacionam com os índices de massa foliar.
+
+### Random Forest
+Escolhido por sua robustez frente a dados com variáveis correlacionadas e por oferecer boa interpretabilidade dos resultados. O algoritmo foi treinado com os dados tabulados, incluindo as **datas de captura das imagens** e os respectivos **índices de massa foliar**.
+
+Essas ferramentas permitiram a construção de modelos preditivos capazes de estimar os índices de massa foliar com base nas características extraídas das imagens, possibilitando a **comparação entre os resultados obtidos por imagens de satélite e de celular**.
+
+## Aprendizado de Máquina
 
 Inicialmente, o planejamento estratégico previa a execução dos algoritmos em um ambiente cloud de alta performance,
 especificamente utilizando o Amazon SageMaker, com o conjunto de dados (imagens) hospedado no Amazon Simple Storage Service (S3).
