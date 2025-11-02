@@ -24,6 +24,22 @@ Para a etapa de **aprendizado de máquina**, foram explorados três tipos de alg
 ### Random Forest
 Escolhido pelo seu desempenho e simplicidade frente a dados com variáveis correlacionadas de maneira não linear e por oferecer boa interpretabilidade dos resultados. O algoritmo foi treinado com os dados tabulados, incluindo as **Estatísticas descritivas dos índices de vegetação** e os respectivos **índices de massa foliar**.
 
+O Random Forest é um algoritmo de ensemble baseado em árvores de decisão. Quando se combina várias árvores, temos uma floresta. Ele cria várias árvores de decisão usando conjuntos de dados aleatórios e, em seguida, combina as previsões de cada árvore para produzir uma previsão final. O Random Forest é um conjunto de várias árvores de decisão que trabalham juntas para fazer previsões mais precisas. Ao invés de depender de uma única árvore, ele cria múltiplas árvores e combina suas respostas. Isso o torna mais robusto e menos propenso a erros causados por variações nos dados. Ele usa a votação entre árvores para prever categorias e a média das previsões para problemas de regressão.
+
+Como funciona?
+
+Criação de várias árvores de decisão → O algoritmo constrói várias árvores, cada uma com um conjunto ligeiramente diferente de dados.
+
+Cada árvore faz uma previsão → Quando recebe um novo dado, cada árvore dá um "palpite" sobre a classe correta.
+
+Votação das árvores (Classificação) → No caso de classificação, cada árvore vota e a resposta mais escolhida entre todas é a decisão final.
+
+Média das previsões (Regressão) → Para problemas de regressão, o resultado final é uma média das previsões feitas pelas árvores.
+
+A imagem abaixo apresenta um trecho do código em Python utilizado na construção do modelo de regressão usado. Para avaliar o desempenho dos algoritmos, os dados foram divididos em conjuntos de treinamento e teste (relação 80/20), adotando também validação cruzada para reduzir viés na avaliação.
+
+![Image](https://github.com/user-attachments/assets/2d2b0a9-d2c7-4061-a84c-41f4ef667a19)
+
 ### Redes Neurais
 Escolhido por sua capacidade de se ajustar a padrões complexos dos dados e por sua eficiência no tempo de treinamento. O algoritmo foi treinado com os dados tabulados, incluindo as **Estatísticas descritivas dos índices de vegetação** e os respectivos **índices de massa foliar**.
 
@@ -36,8 +52,7 @@ Essa combinação reforça o caráter exploratório e científico do projeto, bu
 
 ## Aprendizado de Máquina
 
-Inicialmente, o planejamento estratégico previa a execução dos algoritmos em um ambiente cloud de alta performance,
-especificamente utilizando o Amazon SageMaker, com o conjunto de dados (imagens) hospedado no Amazon Simple Storage Service (S3).
+Inicialmente, o planejamento estratégico previa a execução dos algoritmos em um ambiente cloud de alta performance, especificamente utilizando o Amazon SageMaker, com o conjunto de dados (imagens) hospedado no Amazon Simple Storage Service (S3).
 A integração com o S3 para o upload de todas as imagens foi concluída com sucesso, estabelecendo-o como a fonte central de dados brutos do projeto.
 
 ![Image](https://github.com/user-attachments/assets/4ca20391-63c2-46a1-b89f-54b64bfddcf0)
