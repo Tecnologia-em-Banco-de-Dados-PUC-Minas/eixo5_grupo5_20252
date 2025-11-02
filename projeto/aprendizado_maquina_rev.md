@@ -1,23 +1,25 @@
 ## **Ferramentas e Preparação dos Dados para Aprendizagem de Máquina**
 
-Na etapa de **aprendizagem de máquina** do projeto *“Análise experimental comparativa entre os índices de massa foliar obtidos por imagens de satélite e de celular”*, foi utilizada uma base de dados previamente estruturada a partir do pré-processamento das imagens. Esse pré-processamento envolveu:
+Na etapa de **aprendizagem de máquina** do projeto *“Análise experimental comparativa entre os índices de massa foliar obtidos por imagens de celular”*, foi utilizada uma base de dados previamente estruturada a partir do pré-processamento das imagens. Esse pré-processamento envolveu:
 
 - **Recorte central das imagens**, visando padronizar a área de análise;
-- **Cálculo de estatísticas descritivas** dos pixels, como média, desvio padrão e variância;
-- **Separação dos espectros de núcleos** relevantes para a vegetação;
-- **Cálculo de índices de massa foliar**, como NDVI e outros índices espectrais.
+- **Cálculo de índices de massa foliar**, como GLI e outros índices espectrais.
+- **Cálculo de estatísticas descritivas** dos índices de vegetação, como média, desvio padrão e percentis;
 
 Os resultados dessas operações foram organizados em uma **tabela estruturada com a biblioteca Pandas**, reunindo todas as estatísticas calculadas por imagem. Essa tabela representa o conjunto de dados “limpos” e prontos para serem utilizados na modelagem preditiva.
 
-Para a etapa de **aprendizado de máquina**, foram explorados dois tipos de algoritmos:
-
-### Redes Neurais Convolucionais (CNN)
-Utilizadas para extrair padrões espaciais e visuais diretamente das imagens, as CNNs são especialmente eficazes na análise de dados visuais complexos. Foram aplicadas para identificar características relevantes nas imagens que se correlacionam com os índices de massa foliar.
+Para a etapa de **aprendizado de máquina**, foram explorados três tipos de algoritmos:
 
 ### Random Forest
-Escolhido por sua robustez frente a dados com variáveis correlacionadas e por oferecer boa interpretabilidade dos resultados. O algoritmo foi treinado com os dados tabulados, incluindo as **datas de captura das imagens** e os respectivos **índices de massa foliar**.
+Escolhido pelo seu desempenho e simplicidade frente a dados com variáveis correlacionadas de maneira não linear e por oferecer boa interpretabilidade dos resultados. O algoritmo foi treinado com os dados tabulados, incluindo as **Estatísticas descritivas dos índices de vegetação** e os respectivos **índices de massa foliar**.
 
-Essas ferramentas permitiram a construção de modelos preditivos capazes de estimar os índices de massa foliar com base nas características extraídas das imagens, possibilitando a **comparação entre os resultados obtidos por imagens de satélite e de celular**.
+### Redes Neurais
+Escolhido por sua capacidade de se ajustar a padrões complexos dos dados e por sua eficiência no tempo de treinamento. O algoritmo foi treinado com os dados tabulados, incluindo as **Estatísticas descritivas dos índices de vegetação** e os respectivos **índices de massa foliar**.
+
+### Redes Neurais Convolucionais (CNN)
+Utilizadas para extrair padrões espaciais e visuais diretamente das imagens, as CNNs são especialmente eficazes na análise de dados visuais complexos. Foram aplicadas para identificar a correlação dos índices de massa foliar com as imagens multibanda criadas com cada banda sendo um dos índices de vegetação.
+
+Essas ferramentas permitiram a construção de modelos preditivos capazes de estimar os índices de massa foliar com base nas características extraídas das imagens.
 
 ## Aprendizado de Máquina
 
