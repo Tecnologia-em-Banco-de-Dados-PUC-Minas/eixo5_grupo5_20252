@@ -91,7 +91,7 @@ O conjunto de imagens disponível ainda é limitado, o que afeta a capacidade pr
 
 Essas ações demonstram a adoção de boas práticas de **engenharia de dados** e **experimentação**, preservando a consistência do estudo mesmo diante das limitações práticas do ambiente e das fontes de dados.
 
-## Considerações Finais
+## Considerações
 
 A implementação das abordagens de **aprendizado de máquina** representou um avanço significativo no projeto, permitindo a integração entre dados visuais e laboratoriais em um fluxo analítico coerente.
 
