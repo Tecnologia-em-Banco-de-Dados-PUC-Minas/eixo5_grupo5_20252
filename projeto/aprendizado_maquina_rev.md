@@ -38,6 +38,8 @@ Média das previsões (Regressão) → Para problemas de regressão, o resultado
 
 A imagem abaixo apresenta um trecho do código em Python utilizado na construção do modelo de regressão usado. Para avaliar o desempenho dos algoritmos, os dados foram divididos em conjuntos de treinamento e teste (relação 80/20), adotando também validação cruzada para reduzir viés na avaliação.
 
+![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/main/projeto/images/Random%20Forest%201.png)
+
 ![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/main/projeto/images/Random%20Forest%202.png)
 
 ### Redes Neurais
