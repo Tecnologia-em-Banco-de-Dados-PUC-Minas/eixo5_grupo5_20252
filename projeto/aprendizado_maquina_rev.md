@@ -48,7 +48,7 @@ Utilizadas para extrair padrões espaciais e visuais diretamente das imagens, as
 
 A imagem abaixo apresenta o trecho do código em Python utilizado na construção do modelo de redes neurais.
 
-![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/main/projeto/images/Random%20Forest%201.png)
+![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/main/projeto/images/Neural%20network%201.png)
 
 Essas ferramentas permitiram a construção de modelos preditivos capazes de estimar os índices de massa foliar com base nas características extraídas das imagens.
 
