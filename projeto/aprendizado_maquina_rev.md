@@ -38,7 +38,7 @@ Média das previsões (Regressão) → Para problemas de regressão, o resultado
 
 A imagem abaixo apresenta um trecho do código em Python utilizado na construção do modelo de regressão usado. Para avaliar o desempenho dos algoritmos, os dados foram divididos em conjuntos de treinamento e teste (relação 80/20), adotando também validação cruzada para reduzir viés na avaliação.
 
-![Image](https://github.com/user-attachments/assets/2d2b0a9-d2c7-4061-a84c-41f4ef667a19)
+https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/experiment/ml-models-v1-results/projeto/src/random-forest/random-forest.py#L1C1-L419C11
 
 ### Redes Neurais
 Escolhido por sua capacidade de se ajustar a padrões complexos dos dados e por sua eficiência no tempo de treinamento. O algoritmo foi treinado com os dados tabulados, incluindo as **Estatísticas descritivas dos índices de vegetação** e os respectivos **índices de massa foliar**.
