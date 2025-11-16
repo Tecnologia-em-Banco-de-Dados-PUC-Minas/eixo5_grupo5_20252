@@ -1,13 +1,12 @@
 ## Contexto
 
-Este projeto utilizará imagens coletadas em campo por smartphones convencionais, como uma solução prática, acessível e de baixo custo para o monitoramento de pastagens.
+<p align="justify">Este projeto utilizará imagens coletadas em campo por smartphones convencionais, como uma solução prática, acessível e de baixo custo para o monitoramento de pastagens.</p>
 
----
 
 ## Objetivos
 
 ### Objetivo Geral
-Realizar uma análise experimental comparativa dos índices de massa foliar estimados por diferentes modelos de machine learning, treinados a partir de um dataset de imagens de pastagens, com o objetivo de avaliar a viabilidade do uso desses modelos como alternativa à análise laboratorial no monitoramento de áreas de pasto.
+<p align="justify">Realizar uma análise experimental comparativa dos índices de massa foliar estimados por diferentes modelos de machine learning, treinados a partir de um dataset de imagens de pastagens, com o objetivo de avaliar a viabilidade do uso desses modelos como alternativa à análise laboratorial no monitoramento de áreas de pasto.</p>
 
 ### Objetivos Específicos
 - Processar imagens capturadas por smartphones e extrair índices de vegetação, como o GLI, MPRI, ExR, ExG, ExB.
