@@ -27,4 +27,9 @@
 
 ## Referências
 
+Documentação do Amazon SageMaker. Artigo disponível em: https://aws.amazon.com/pt/sagemaker/. Acesso em 16/11/2025.
+
+
+
+
 
