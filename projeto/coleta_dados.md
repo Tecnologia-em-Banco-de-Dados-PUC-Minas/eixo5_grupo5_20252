@@ -2,9 +2,13 @@
 
 ### Coleta de Dados
 
-<p align="justify">O projeto consiste na análise experimental de pastagens em uma fazenda de criação de gado para corte, com o objetivo de avaliar métodos alternativos para a verificação da massa foliar. O estudo corresponde a uma colaboração com os autores principais, onde o grupo busca contribuir com o desenvolvimento de uma solução alternativa de análise de dados e processamento de informações que poderá servir como validação das técnicas e métodos utilizados no estudo original.</p>
+<p align="justify">O projeto consiste em uma análise experimental de pastagens em uma fazenda destinada à criação de gado de corte, com o objetivo de avaliar <b>métodos alternativos para a verificação da massa foliar</b>. Este estudo é desenvolvido em colaboração com os autores do projeto original, buscando contribuir para o aprimoramento das técnicas já utilizadas e propor uma solução alternativa de análise de dados e processamento de informações. Essa abordagem poderá servir como <b>validação complementar</b> das metodologias aplicadas no estudo inicial.</p>
 
-<p align="justify">Todos os dados utilizados nesse projeto foram coletados pelos pesquisadores responsáveis pelo estudo original e estão armazenados em um repositório privado no GitHub do projeto denominado <strong><i>AgroBrain Biomass: Sistema Inteligente de Análise de Pastagens</i></strong>. O acesso ao repositório original foi franqueado aos integrantes do grupo deste estudo secundário, denominado <strong>Projeto de Arquitetura de Dados em Nuvem: Análise experimental de comparação entre índices de massa foliar obtidos através de imagens de celular.</strong></p>
+<p align="justify">Todos os dados utilizados neste projeto foram coletados pelos pesquisadores responsáveis pelo estudo original e encontram-se armazenados em um <b>repositório privado no GitHub</b>, vinculado ao projeto <b><i>AgroBrain Biomass: Sistema Inteligente de Análise de Pastagens.</b></i></p>
+
+<p align="justify">O acesso ao repositório original foi gentilmente concedido pelo Sr. <b>Guilherme Otávio de Sena</b> aos integrantes do grupo responsável por este estudo secundário, denominado <b>Projeto de Arquitetura de Dados em Nuvem: Análise Experimental de Comparação entre Índices de Massa Foliar Obtidos através de Imagens de Celular.</b></p>
+
+<p align="justify">Essa colaboração assegura a utilização de dados previamente validados, garantindo a integridade e confiabilidade das informações empregadas na análise.</p>
 
 A coleta de dados envolve inicialmente duas fontes principais, que se complementam:
 
