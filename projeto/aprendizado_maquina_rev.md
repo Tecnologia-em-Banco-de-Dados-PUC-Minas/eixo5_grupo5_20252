@@ -1,14 +1,14 @@
 # Ferramentas e Preparação dos Dados para Aprendizagem de Máquina
 
-Na etapa de **aprendizagem de máquina** do projeto *“Análise experimental comparativa entre os índices de massa foliar obtidos por imagens de celular”*, foi utilizada uma base de dados previamente estruturada a partir do pré-processamento das imagens. Esse pré-processamento envolveu:
+<p align="justify">Na etapa de <strong>aprendizagem de máquina</strong> do projeto <i>“Análise experimental comparativa entre os índices de massa foliar obtidos por imagens de celular”</i>, foi utilizada uma base de dados previamente estruturada a partir do pré-processamento das imagens. Esse pré-processamento envolveu:</p>
 
 - **Recorte central das imagens**, visando padronizar a área de análise;
 - **Cálculo de índices de massa foliar**, como GLI e outros índices espectrais.
 - **Cálculo de estatísticas descritivas** dos índices de vegetação, como média, desvio padrão e percentis;
 
-O objetivo principal foi identificar padrões entre as características extraídas das imagens de pastagens e os valores de massa foliar obtidos por análise laboratorial, a fim de avaliar o potencial do uso combinado de diferentes fontes de imagem na estimativa da qualidade das pastagens.
+<p align="justify">O objetivo principal foi identificar padrões entre as características extraídas das imagens de pastagens e os valores de massa foliar obtidos por análise laboratorial, a fim de avaliar o potencial do uso combinado de diferentes fontes de imagem na estimativa da qualidade das pastagens.</p>
 
-A base de dados utilizada nesta etapa foi derivada do pré-processamento das imagens descrito na **Etapa 3**, organizada em uma tabela estruturada com a biblioteca **Pandas**.
+<p align="justify">A base de dados utilizada nesta etapa foi derivada do pré-processamento das imagens descrito na **Etapa 3**, organizada em uma tabela estruturada com a biblioteca <b>Pandas</b>.</p>
 
 Essa tabela é constituída por índices espectrais calculados para cada amostra de imagem e está disponível em um arquivo tabular denominado `path_img_by_lab_sample.csv`.
 
