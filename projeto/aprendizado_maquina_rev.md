@@ -36,29 +36,31 @@ Votação das árvores (Classificação) → No caso de classificação, cada á
 
 Média das previsões (Regressão) → Para problemas de regressão, o resultado final é uma média das previsões feitas pelas árvores.
 
-No contexto do projeto Arquitetura de Dados em Nuvem: Análise experimental de comparação entre índices de massa foliar obtidos através de imagens de celular, o Random Forest foi aplicado tanto para regressão quanto para classificação, utilizando dados tabulados derivados das imagens e estatísticas descritivas dos índices de vegetação.
+No contexto do projeto Arquitetura de Dados em Nuvem: Análise experimental de comparação entre índices de massa foliar obtidos através de imagens de celular, o Random Forest foi aplicado tanto para regressão quanto para classificação, utilizando dados tabulados derivados das imagens e estatísticas descritivas dos índices de vegetação:
 
 
-# Regressão:
+#### Regressão:
 O modelo apresentou R² = 0.571 no treino e R² = 0.375 no teste, com RMSE de 1103 e 1444, respectivamente. Esses resultados indicam que o algoritmo captura parte da variabilidade dos índices de massa foliar, mas há dispersão significativa em valores altos, sugerindo necessidade de ajustes ou inclusão de variáveis complementares.
 
 ![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/experiment/ml-models-v1-results/projeto/src/metrics/random-forest/graphic_regression_scatter_result.png)
 
-# Classificação Binária:
+
+#### Classificação Binária:
 A curva ROC revelou excelente desempenho, com AUC = 0.939 no treino e 0.859 no teste, e acurácia superior a 80%. Isso demonstra alta capacidade de discriminação entre classes, mesmo em cenários com dados heterogêneos.
 
 ![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/experiment/ml-models-v1-results/projeto/src/metrics/random-forest/graphic_binary_classifition_roc_curve_result.png)
 
-# Classificação Multiclasse:
+
+#### Classificação Multiclasse:
 O modelo manteve consistência, com acurácia de 82% e F1 médio de 0.712 no teste. As curvas ROC para cada classe apresentaram AUC acima de 0.88, reforçando a robustez do algoritmo para diferentes categorias de índices.
 
-![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/main/projeto/images/Random%20Forest%201.png)
+![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/experiment/ml-models-v1-results/projeto/src/metrics/random-forest/graphic_multiclass_classification_roc_curve_result.png)
 
 Esses resultados confirmam que o Random Forest é adequado para lidar com dados complexos e não lineares, comuns em imagens agrícolas capturadas por dispositivos móveis, e permite identificar variáveis mais relevantes para a estimativa da massa foliar, fornecendo insights valiosos para práticas de manejo.
 
 A imagem abaixo apresenta o trecho do código em Python utilizado na construção do modelo de regressão usado. Para avaliar o desempenho dos algoritmos, os dados foram divididos em conjuntos de treinamento e teste (relação 80/20), adotando também validação cruzada para reduzir viés na avaliação.
 
-![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/experiment/ml-models-v1-results/projeto/src/metrics/random-forest/graphic_multiclass_classification_roc_curve_result.png)
+![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/main/projeto/images/Random%20Forest%201.png)
 
 
 
