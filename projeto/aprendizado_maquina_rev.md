@@ -44,17 +44,24 @@ O modelo apresentou R² = 0.571 no treino e R² = 0.375 no teste, com RMSE de 11
 
 ![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/experiment/ml-models-v1-results/projeto/src/metrics/random-forest/graphic_regression_scatter_result.png)
 
+**Interpretação:**
+O modelo apresenta desempenho moderado na regressão, com tendência a subestimar valores altos. A dispersão indica que o Random Forest captura parte da variabilidade, mas há espaço para ajustes (ex.: tuning de hiperparâmetros ou inclusão de mais variáveis explicativas).
 
 #### Classificação Binária:
 A curva ROC revelou excelente desempenho, com AUC = 0.939 no treino e 0.859 no teste, e acurácia superior a 80%. Isso demonstra alta capacidade de discriminação entre classes, mesmo em cenários com dados heterogêneos.
 
 ![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/experiment/ml-models-v1-results/projeto/src/metrics/random-forest/graphic_binary_classifition_roc_curve_result.png)
 
+**Interpretação:**
+Excelente capacidade discriminativa, especialmente no treino. No teste, AUC > 0.85 indica bom desempenho geral, com leve redução, sugerindo generalização adequada.
 
 #### Classificação Multiclasse:
 O modelo manteve consistência, com acurácia de 82% e F1 médio de 0.712 no teste. As curvas ROC para cada classe apresentaram AUC acima de 0.88, reforçando a robustez do algoritmo para diferentes categorias de índices.
 
 ![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/experiment/ml-models-v1-results/projeto/src/metrics/random-forest/graphic_multiclass_classification_roc_curve_result.png)
+
+**Interpretação:**
+O modelo mantém alta capacidade de separação entre classes, com métricas consistentes entre treino e teste. O F1 indica equilíbrio entre precisão e recall.
 
 Esses resultados confirmam que o Random Forest é adequado para lidar com dados complexos e não lineares, comuns em imagens agrícolas capturadas por dispositivos móveis, e permite identificar variáveis mais relevantes para a estimativa da massa foliar, fornecendo insights valiosos para práticas de manejo.
 
