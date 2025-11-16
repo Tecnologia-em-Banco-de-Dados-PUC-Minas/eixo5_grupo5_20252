@@ -17,3 +17,7 @@
 - Identificar as limitações e potencialidades dos diferentes modelos de machine learning aplicados à estimativa da massa foliar.
 - Desenvolver um fluxo de análise automatizado e replicável, utilizando a linguagem Python e suas bibliotecas.
 - Contribuir para o desenvolvimento de soluções tecnológicas acessíveis e de baixo custo voltadas ao monitoramento de pastagens no contexto do agronegócio.
+
+## Referências
+
+
