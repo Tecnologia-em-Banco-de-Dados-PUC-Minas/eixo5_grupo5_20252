@@ -27,7 +27,15 @@
 
 ## Referências
 
-Documentação do Amazon SageMaker. Artigo disponível em: https://aws.amazon.com/pt/sagemaker/. Acesso em 16/11/2025.
+Documentação do Amazon SageMaker.
+Artigo disponível em: https://aws.amazon.com/pt/sagemaker/. Acesso em 16/11/2025.
+
+GSENNAURA. AgroBrain Biomass: Sistema Inteligente de Análise de Pastagens. Repositório particular. Disponível em: https://github.com/gsennaura/agrobrain-biomassa/tree/main. Acesso em: 16/11/2025.
+
+EMBRAPA. FAPESP aprova projeto para diagnóstico e monitoramento de pastagens. Portal Embrapa Notícias, 06/06/2025. Disponível em: https://www.embrapa.br/busca-de-noticias/-/noticia/101051991/projeto-em-rede-para-diagnostico-e-monitoramento-de-pastagens-e-aprovado-pela-fapesp. Acesso em: 16/11/2025.
+
+SILVA, M. H. et al. Análise da cultura da soja a partir de índices de vegetação (ExG, GLI, TGI) advindos de imagens RGB obtidas com ARP. *Revista Brasileira de Geomática*, v. 10, n. 2, p. 140-154, 2022. Disponível em: https://periodicos.utfpr.edu.br/rbgeo/article/view/15042. Acesso em: 16/11/2025.
+
 
 
 
