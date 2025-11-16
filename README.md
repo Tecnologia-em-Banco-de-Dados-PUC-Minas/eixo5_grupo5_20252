@@ -1,4 +1,4 @@
-# Projeto de Arquitetura de Dados em Nuvem: Análise experimental de comparação entre índices de massa foliar obtidos através de imagens de satélite e celular.
+# Projeto de Arquitetura de Dados em Nuvem: Análise experimental de comparação entre índices de massa foliar obtidos através de imagens de celular.
 
 `UNIVERSIDADE CATÓLICA DE MINAS GERAIS`
 
@@ -12,7 +12,7 @@
 
 
 <p align="justify">
-O monitoramento da qualidade das pastagens é um fator essencial para a eficiência produtiva no setor agropecuário, especialmente em sistemas de criação de gado. Com o avanço das tecnologias de sensoriamento remoto e da popularização de dispositivos móveis com câmeras de alta resolução, tornou-se possível coletar dados visuais de diferentes fontes para análise ambiental. Este projeto propõe uma análise experimental comparativa entre índices de massa foliar obtidos por meio de imagens de satélite e fotografias capturadas por celular, com o objetivo de avaliar a viabilidade do uso combinado dessas fontes na análise de dados sobre pastagens. A proposta visa contribuir para o desenvolvimento de soluções acessíveis e eficazes para o manejo inteligente de áreas de pasto, utilizando ferramentas de ciência de dados e processamento de imagens com Python.</p>
+O monitoramento da qualidade das pastagens é um fator essencial para a eficiência produtiva no setor agropecuário, especialmente em sistemas de criação de gado. Com o avanço das tecnologias de sensoriamento remoto e da popularização de dispositivos móveis com câmeras de alta resolução, tornou-se possível coletar dados visuais de diferentes fontes para análise ambiental. Este projeto propõe uma análise experimental dos índices de massa foliar obtidos por meio de imagens capturadas por celular, com o objetivo de avaliar a viabilidade do uso dessa fonte na análise de dados sobre pastagens. A proposta visa contribuir para o desenvolvimento de soluções acessíveis e eficazes para o manejo inteligente de áreas de pasto, utilizando ferramentas de ciência de dados e processamento de imagens com Python.</p>
 
 ## Integrantes
 * Alexandre Guzmán Siácara
