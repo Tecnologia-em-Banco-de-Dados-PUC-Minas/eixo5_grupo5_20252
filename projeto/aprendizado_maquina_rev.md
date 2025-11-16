@@ -124,6 +124,71 @@ Essas ferramentas permitiram a construção de modelos preditivos capazes de est
 
 Essa combinação reforça o caráter exploratório e científico do projeto, buscando explorar qual apresenta o melhor equilíbrio entre desempenho estatístico, estabilidade e aplicabilidade prática no contexto do manejo das pastagens.
 
+## Avaliação dos Modelos Criados, Métricas Utilizadas e Discussão dos Resultados Obtidos
+
+A avaliação dos modelos foi realizada considerando diferentes abordagens (Random Forest e Redes Neurais) aplicadas aos dados derivados das imagens de celular. Foram utilizadas métricas específicas para **regressão e classificação**, permitindo analisar a capacidade preditiva e discriminativa dos algoritmos.
+
+**Métricas Utilizadas**
+
+**Para Regressão:**
+
+* R² (Coeficiente de Determinação): Mede a proporção da variabilidade explicada pelo modelo.
+* RMSE (Root Mean Squared Error): Avalia o erro médio quadrático, penalizando grandes desvios.
+* MAE (Mean Absolute Error): Indica o erro médio absoluto, útil para interpretar desvios médios.
+
+**Para Classificação:**
+
+* AUC (Área sob a Curva ROC): Mede a capacidade do modelo em distinguir classes.
+* Acurácia: Percentual de previsões corretas.
+* F1-Score: Equilíbrio entre precisão e recall, especialmente relevante em classes desbalanceadas.
+
+**Resultados Obtidos**
+
+**Random Forest**
+
+**Regressão:**
+
+* Treino: R² = 0.571 | RMSE = 1103 | MAE = 720
+* Teste: R² = 0.375 | RMSE = 1444 | MAE = 931
+
+O modelo apresentou desempenho moderado, capturando parte da variabilidade dos índices de massa foliar, mas com dispersão significativa em valores altos.
+
+**Classificação Binária:**
+
+* Treino: AUC = 0.939 | Acurácia = 87.4%
+* Teste: AUC = 0.859 | Acurácia = 81.6%
+
+Excelente capacidade discriminativa, com AUC acima de 0.85 no teste, indicando robustez.
+
+**Classificação Multiclasse:**
+
+* Teste: Acurácia = 82.1% | F1 = 0.712
+* AUC por classe: Classe 0 = 0.92 | Classe 1 = 0.89 | Classe 2 = 0.88
+
+O modelo manteve consistência entre treino e teste, com bom equilíbrio entre precisão e recall.
+
+**Redes Neurais**
+
+**Influência da Arquitetura:**
+
+* R² variou entre 0.47 e 0.65, com melhor desempenho em redes com **4 a 6 camadas** e número médio de neurônios entre 400 e 700.
+
+* Redes muito rasas ou muito profundas não apresentaram ganhos significativos.
+
+As Redes Neurais mostraram maior capacidade de ajuste a padrões complexos, mas exigem cuidado na definição da arquitetura para evitar sobreajuste ou subajuste. CNNs foram eficazes na extração de padrões visuais, reforçando sua aplicabilidade em imagens agrícolas.
+
+**Comparação Geral**
+
+* **Random Forest**: Mais interpretável, bom desempenho em classificação, mas limitado na regressão.
+* **Redes Neurais**: Melhor captura de padrões complexos, especialmente com CNNs, porém maior custo computacional e necessidade de ajuste fino.
+
+**Conclusão**
+
+Ambos os modelos apresentaram resultados satisfatórios, mas com características distintas:
+
+* **Random Forest** é indicado para cenários que exigem interpretabilidade e menor complexidade computacional.
+* **Redes Neurais** são recomendadas para análises visuais mais sofisticadas, aproveitando sua capacidade de aprender padrões complexos.
+
 ## Aprendizado de Máquina
 
 Inicialmente, o planejamento estratégico previa a execução dos algoritmos em um ambiente cloud de alta performance, especificamente utilizando o Amazon SageMaker, com o conjunto de dados (imagens) hospedado no Amazon Simple Storage Service (S3).
