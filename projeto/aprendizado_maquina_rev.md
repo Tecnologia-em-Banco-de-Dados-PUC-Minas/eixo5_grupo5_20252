@@ -208,6 +208,71 @@ Ambos os algoritmos foram capazes de extrair padrões relevantes, porém a limit
 | **Tempo de Treinamento**        | Rápido                                                 | Mais demorado (especialmente com imagens)            |
 | **Aplicabilidade**              | Ideal para dados estruturados e interpretabilidade     | Ideal para padrões visuais complexos                 |
 
+# Aprendizado de Máquina
+
+## Planejamento Inicial e Ajustes Necessários
+
+O planejamento estratégico do projeto previa a execução dos algoritmos em um ambiente **cloud** de alta performance, utilizando o **Amazon SageMaker** com o conjunto de dados (imagens) hospedado no **Amazon Simple Storage Service (S3)**. A integração com o S3 foi concluída com sucesso, estabelecendo-o como a fonte central de dados brutos do projeto.
+
+No entanto, a tentativa de operacionalizar a plataforma de ML na nuvem encontrou um obstáculo: ao criar o domínio necessário para utilizar o SageMaker, a equipe se deparou com um erro de permissão. A conta educacional **AWS LAB**, fornecida pelo convênio com a PUC Minas, não concedia as permissões necessárias para o uso do serviço Amazon SageMaker.
+
+Diante dessa restrição, a equipe decidiu alterar o ambiente de execução. Para garantir o avanço do projeto e a entrega dos resultados, o treinamento dos algoritmos (**Random Forest** e **Redes Neurais**) foi realizado em ambiente **local**, utilizando **Visual Studio Code** e bibliotecas Python equivalentes. Essa decisão permitiu que os processos de pré-processamento, treinamento e avaliação fossem conduzidos de forma eficaz, preservando a integridade metodológica e o cronograma do projeto.
+
+---
+
+## Desafios e Estratégias de Superação
+
+Durante o desenvolvimento, foram enfrentados diversos desafios técnicos e operacionais:
+
+### 1. Limitações do Ambiente Cloud
+- **Problema:** Restrições de permissão na conta educacional da AWS impediram o uso do SageMaker.
+- **Solução:** Migração para execução local com Visual Studio Code e bibliotecas Python (Scikit-learn, TensorFlow, Keras).
+
+### 2. Heterogeneidade das Imagens
+- **Problema:** Fotografias obtidas por diferentes dispositivos e operadores, com variações de iluminação, ângulo e resolução.
+- **Estratégia:** Recorte central padronizado das imagens para isolar a região mais representativa da vegetação.
+
+### 3. Dispersão Temporal das Coletas
+- **Problema:** Imagens capturadas em diferentes datas e condições ambientais.
+- **Decisão:** Manter diversidade temporal para aumentar a robustez dos modelos, mesmo com ruído adicional.
+
+### 4. Tamanho Reduzido do Banco de Dados
+- **Problema:** Conjunto de imagens limitado, afetando a capacidade preditiva de modelos complexos.
+- **Perspectiva:** Expansão contínua da base de dados em etapas futuras para reavaliação e aperfeiçoamento dos modelos.
+
+---
+
+## Considerações sobre Infraestrutura
+
+Outro fator relevante foi a limitação dos computadores locais, que não possuem alta capacidade de processamento para suportar treinamentos extensivos de redes neurais profundas. Essa restrição impactou:
+- **Tempo de treinamento:** Mais longo do que o previsto.
+- **Complexidade dos modelos:** Necessidade de reduzir número de camadas e neurônios para viabilizar execução.
+
+Apesar dessas limitações, foram adotadas estratégias para otimizar o desempenho:
+- Ajuste de hiperparâmetros para reduzir custo computacional.
+- Uso de arquiteturas mais leves para Redes Neurais.
+- Priorização de modelos interpretáveis e eficientes, como Random Forest.
+
+---
+
+## Considerações Finais
+
+A implementação das abordagens de aprendizado de máquina representou um avanço significativo no projeto, permitindo integrar dados visuais e laboratoriais em um fluxo analítico coerente.
+
+Mesmo diante das dificuldades técnicas e da limitação da base de dados, foi possível estruturar modelos capazes de gerar estimativas iniciais da massa foliar com base nas características espectrais das imagens.
+
+Os resultados parciais obtidos nesta etapa serão aprofundados nas próximas fases, incluindo:
+- **Métricas de desempenho detalhadas**
+- **Comparações entre os modelos**
+- **Interpretações sobre a influência das variáveis na precisão das predições**
+
+
+
+
+
+
+
+
 ## Aprendizado de Máquina
 
 Inicialmente, o planejamento estratégico previa a execução dos algoritmos em um ambiente cloud de alta performance, especificamente utilizando o Amazon SageMaker, com o conjunto de dados (imagens) hospedado no Amazon Simple Storage Service (S3).
