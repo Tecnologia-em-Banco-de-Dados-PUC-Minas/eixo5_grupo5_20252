@@ -2,14 +2,14 @@
 
 ### Coleta de Dados
 
-O projeto consiste na análise experimental de pastagens em uma fazenda de criação de gado para corte, com o objetivo de avaliar métodos alternativos para a verificação da massa foliar. O estudo corresponde a uma colaboração com os autores principais, onde o grupo busca contribuir com o desenvolvimento de uma solução alternativa de análise de dados e processamento de informações que poderá servir como validação das técnicas e métodos utilizados no estudo original.
+<p align="justify">O projeto consiste na análise experimental de pastagens em uma fazenda de criação de gado para corte, com o objetivo de avaliar métodos alternativos para a verificação da massa foliar. O estudo corresponde a uma colaboração com os autores principais, onde o grupo busca contribuir com o desenvolvimento de uma solução alternativa de análise de dados e processamento de informações que poderá servir como validação das técnicas e métodos utilizados no estudo original.</p>
 
-Todos os dados utilizados nesse projeto foram coletados pelos pesquisadores responsáveis pelo estudo original e estão armazenados em um repositório privado no GitHub do projeto denominado **AgroBrain Biomass: Sistema Inteligente de Análise de Pastagens**. O acesso ao repositório original foi franqueado aos integrantes do grupo deste estudo secundário, denominado **Projeto de Arquitetura de Dados em Nuvem: Análise experimental de comparação entre índices de massa foliar obtidos através de imagens de celular**.
+<p align="justify">Todos os dados utilizados nesse projeto foram coletados pelos pesquisadores responsáveis pelo estudo original e estão armazenados em um repositório privado no GitHub do projeto denominado **AgroBrain Biomass: Sistema Inteligente de Análise de Pastagens**. O acesso ao repositório original foi franqueado aos integrantes do grupo deste estudo secundário, denominado <strong>Projeto de Arquitetura de Dados em Nuvem: Análise experimental de comparação entre índices de massa foliar obtidos através de imagens de celular.</strong></p>
 
 A coleta de dados envolve inicialmente duas fontes principais, que se complementam:
 
-- **Imagens de celular**: Fotografias capturadas em campo nos piquetes de pastagem, utilizando smartphones com câmeras de alta resolução. Cada fotografia corresponde a uma amostra de pastagem que também é analisada em laboratório, garantindo um registro preciso da área estudada.
-- **Análises laboratoriais**: Dados da massa foliar real obtidos a partir das amostras coletadas em cada piquete. Esses valores servem como referência para validação e comparação com os índices extraídos das imagens. Os resultados das análises foram reunidos e armazenados no repositório do GitHub.
+<p align="justify">- **Imagens de celular**: Fotografias capturadas em campo nos piquetes de pastagem, utilizando smartphones com câmeras de alta resolução. Cada fotografia corresponde a uma amostra de pastagem que também é analisada em laboratório, garantindo um registro preciso da área estudada.
+- **Análises laboratoriais**: Dados da massa foliar real obtidos a partir das amostras coletadas em cada piquete. Esses valores servem como referência para validação e comparação com os índices extraídos das imagens. Os resultados das análises foram reunidos e armazenados no repositório do GitHub.</p>
 
 Para garantir a qualidade e consistência dos dados, as imagens de celular são processadas por algoritmos em Python que calculam índices de vegetação por pixel, como:
 
