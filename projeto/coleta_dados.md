@@ -4,7 +4,7 @@
 
 <p align="justify">O projeto consiste na análise experimental de pastagens em uma fazenda de criação de gado para corte, com o objetivo de avaliar métodos alternativos para a verificação da massa foliar. O estudo corresponde a uma colaboração com os autores principais, onde o grupo busca contribuir com o desenvolvimento de uma solução alternativa de análise de dados e processamento de informações que poderá servir como validação das técnicas e métodos utilizados no estudo original.</p>
 
-<p align="justify">Todos os dados utilizados nesse projeto foram coletados pelos pesquisadores responsáveis pelo estudo original e estão armazenados em um repositório privado no GitHub do projeto denominado <strong>AgroBrain Biomass: Sistema Inteligente de Análise de Pastagens</strong>. O acesso ao repositório original foi franqueado aos integrantes do grupo deste estudo secundário, denominado <strong>Projeto de Arquitetura de Dados em Nuvem: Análise experimental de comparação entre índices de massa foliar obtidos através de imagens de celular.</strong></p>
+<p align="justify">Todos os dados utilizados nesse projeto foram coletados pelos pesquisadores responsáveis pelo estudo original e estão armazenados em um repositório privado no GitHub do projeto denominado <strong><i>AgroBrain Biomass: Sistema Inteligente de Análise de Pastagens</i></strong>. O acesso ao repositório original foi franqueado aos integrantes do grupo deste estudo secundário, denominado <strong>Projeto de Arquitetura de Dados em Nuvem: Análise experimental de comparação entre índices de massa foliar obtidos através de imagens de celular.</strong></p>
 
 A coleta de dados envolve inicialmente duas fontes principais, que se complementam:
 
