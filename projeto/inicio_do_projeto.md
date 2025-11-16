@@ -30,7 +30,7 @@
 Documentação do Amazon SageMaker.
 Artigo disponível em: https://aws.amazon.com/pt/sagemaker/. Acesso em 16/11/2025.
 
-GSENNAURA. AgroBrain Biomass: Sistema Inteligente de Análise de Pastagens. Repositório particular. Disponível em: https://github.com/gsennaura/agrobrain-biomassa/tree/main. Acesso em: 16/11/2025.
+GSENNAURA. AgroBrain Biomass: Sistema Inteligente de Análise de Pastagens. Repositório privado. Disponível em: https://github.com/gsennaura/agrobrain-biomassa/tree/main. Acesso em: 16/11/2025.
 
 EMBRAPA. FAPESP aprova projeto para diagnóstico e monitoramento de pastagens. Portal Embrapa Notícias, 06/06/2025. Disponível em: https://www.embrapa.br/busca-de-noticias/-/noticia/101051991/projeto-em-rede-para-diagnostico-e-monitoramento-de-pastagens-e-aprovado-pela-fapesp. Acesso em: 16/11/2025.
 
