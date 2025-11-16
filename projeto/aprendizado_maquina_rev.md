@@ -39,7 +39,7 @@ Média das previsões (Regressão) → Para problemas de regressão, o resultado
 No contexto do projeto Arquitetura de Dados em Nuvem: Análise experimental de comparação entre índices de massa foliar obtidos através de imagens de celular, o Random Forest foi aplicado tanto para regressão quanto para classificação, utilizando dados tabulados derivados das imagens e estatísticas descritivas dos índices de vegetação:
 
 
-#### Regressão:
+#### Regressão
 O modelo apresentou R² = 0.571 no treino e R² = 0.375 no teste, com RMSE de 1103 e 1444, respectivamente. Esses resultados indicam que o algoritmo captura parte da variabilidade dos índices de massa foliar, mas há dispersão significativa em valores altos, sugerindo necessidade de ajustes ou inclusão de variáveis complementares.
 
 ![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/experiment/ml-models-v1-results/projeto/src/metrics/random-forest/graphic_regression_scatter_result.png)
@@ -47,7 +47,7 @@ O modelo apresentou R² = 0.571 no treino e R² = 0.375 no teste, com RMSE de 11
 **Interpretação:**
 O modelo apresenta desempenho moderado na regressão, com tendência a subestimar valores altos. A dispersão indica que o Random Forest captura parte da variabilidade, mas há espaço para ajustes (ex.: tuning de hiperparâmetros ou inclusão de mais variáveis explicativas).
 
-#### Classificação Binária:
+#### Classificação Binária
 A curva ROC revelou excelente desempenho, com AUC = 0.939 no treino e 0.859 no teste, e acurácia superior a 80%. Isso demonstra alta capacidade de discriminação entre classes, mesmo em cenários com dados heterogêneos.
 
 ![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/experiment/ml-models-v1-results/projeto/src/metrics/random-forest/graphic_binary_classifition_roc_curve_result.png)
@@ -55,7 +55,7 @@ A curva ROC revelou excelente desempenho, com AUC = 0.939 no treino e 0.859 no t
 **Interpretação:**
 Excelente capacidade discriminativa, especialmente no treino. No teste, AUC > 0.85 indica bom desempenho geral, com leve redução, sugerindo generalização adequada.
 
-#### Classificação Multiclasse:
+#### Classificação Multiclasse
 O modelo manteve consistência, com acurácia de 82% e F1 médio de 0.712 no teste. As curvas ROC para cada classe apresentaram AUC acima de 0.88, reforçando a robustez do algoritmo para diferentes categorias de índices.
 
 ![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/experiment/ml-models-v1-results/projeto/src/metrics/random-forest/graphic_multiclass_classification_roc_curve_result.png)
@@ -72,10 +72,49 @@ A imagem abaixo apresenta o trecho do código em Python utilizado na construçã
 
 
 ### Redes Neurais
-Escolhido por sua capacidade de se ajustar a padrões complexos dos dados e por sua eficiência no tempo de treinamento. O algoritmo foi treinado com os dados tabulados, incluindo as **Estatísticas descritivas dos índices de vegetação** e os respectivos **índices de massa foliar**.
+As **Redes Neurais** foram escolhidas pela sua capacidade de se ajustar a padrões complexos nos dados e pela eficiência no tempo de treinamento. O algoritmo foi treinado com dados tabulados, incluindo estatísticas descritivas dos índices de vegetação e os respectivos índices de massa foliar.
 
 ### Redes Neurais Convolucionais (CNN)
-Utilizadas para extrair padrões espaciais e visuais diretamente das imagens, as CNNs são especialmente eficazes na análise de dados visuais complexos. Foram aplicadas para identificar a correlação dos índices de massa foliar com as imagens multibanda criadas com cada banda sendo um dos índices de vegetação.
+As **CNNs** foram utilizadas para extrair padrões espaciais e visuais diretamente das imagens, sendo especialmente eficazes na análise de dados visuais complexos. No projeto, as CNNs foram aplicadas para identificar a correlação dos índices de massa foliar com as imagens multibanda, onde cada banda representa um índice de vegetação.
+
+**Como funcionam as Redes Neurais?**
+
+* Camadas e Neurônios:
+Cada rede é composta por camadas de neurônios que processam os dados em diferentes níveis de abstração.
+
+* Ajuste de Pesos:
+Durante o treinamento, os pesos das conexões são ajustados para minimizar o erro entre a previsão e o valor real.
+
+* CNNs:
+Utilizam filtros convolucionais para capturar padrões locais nas imagens, como texturas e variações de cor, fundamentais para estimar a massa foliar.
+
+#### Influência do Número de Neurônios
+!Gráfico R² vs Número médio de neurônios
+
+![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/experiment/ml-models-v1-results/projeto/src/metrics/neural-network/graphic_regression_scatter_r2_mean_neu.png)
+
+**Observação:**
+O R² variou entre aproximadamente 0.47 e 0.65, com tendência de concentração entre 0.58 e 0.62 para redes com número médio de neurônios entre 400 e 700.
+
+**Interpretação:**
+Redes muito pequenas ou muito grandes não apresentaram ganhos significativos, indicando que existe um ponto ótimo de complexidade.
+
+#### Influência do Número de Camadas
+!Gráfico R² vs Número de camadas
+
+![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/experiment/ml-models-v1-results/projeto/src/metrics/neural-network/graphic_regression_scatter_r2_layers.png)
+
+**Observação:**
+O R² também variou entre 0.47 e 0.65, com melhor desempenho em redes com 4 a 6 camadas, sugerindo que profundidade moderada é mais eficaz.
+
+**Interpretação:**
+Redes muito rasas ou muito profundas tendem a apresentar menor estabilidade, reforçando a importância do ajuste arquitetural.
+
+As Redes Neurais, especialmente as CNNs, mostraram-se adequadas para lidar com padrões complexos presentes nas imagens de celular. Os resultados indicam que:
+
+* A arquitetura da rede (número de camadas e neurônios) influencia diretamente o desempenho.
+* O melhor equilíbrio foi obtido com redes de complexidade intermediária.
+* A abordagem baseada em CNNs permite capturar características visuais relevantes para estimar a massa foliar, fornecendo uma solução robusta para análise agrícola.
 
 A imagem abaixo apresenta o trecho do código em Python utilizado na construção do modelo de redes neurais.
 
