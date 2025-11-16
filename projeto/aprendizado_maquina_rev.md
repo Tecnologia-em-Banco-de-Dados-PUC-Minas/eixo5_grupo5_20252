@@ -1,4 +1,4 @@
-## **Ferramentas e Preparação dos Dados para Aprendizagem de Máquina**
+# Ferramentas e Preparação dos Dados para Aprendizagem de Máquina
 
 Na etapa de **aprendizagem de máquina** do projeto *“Análise experimental comparativa entre os índices de massa foliar obtidos por imagens de celular”*, foi utilizada uma base de dados previamente estruturada a partir do pré-processamento das imagens. Esse pré-processamento envolveu:
 
@@ -21,7 +21,7 @@ Esse conjunto de dados funciona como o ponto de partida para o processo de **mod
 
 Para a etapa de **aprendizado de máquina**, foram explorados três tipos de algoritmos:
 
-### Random Forest
+## Random Forest
 Escolhido pelo seu desempenho e simplicidade frente a dados com variáveis correlacionadas de maneira não linear e por oferecer boa interpretabilidade dos resultados. O algoritmo foi treinado com os dados tabulados, incluindo as **Estatísticas descritivas dos índices de vegetação** e os respectivos **índices de massa foliar**.
 
 O algoritmo Random Forest é um método de aprendizado supervisionado baseado em múltiplas árvores de decisão, utilizado para tarefas de classificação e regressão. Sua robustez decorre da combinação de várias árvores, cada uma treinada com subconjuntos aleatórios de dados e atributos, reduzindo o risco de overfitting e aumentando a generalização.
@@ -39,7 +39,7 @@ Média das previsões (Regressão) → Para problemas de regressão, o resultado
 No contexto do projeto Arquitetura de Dados em Nuvem: Análise experimental de comparação entre índices de massa foliar obtidos através de imagens de celular, o Random Forest foi aplicado tanto para regressão quanto para classificação, utilizando dados tabulados derivados das imagens e estatísticas descritivas dos índices de vegetação:
 
 
-#### Regressão
+### Regressão
 O modelo apresentou R² = 0.571 no treino e R² = 0.375 no teste, com RMSE de 1103 e 1444, respectivamente. Esses resultados indicam que o algoritmo captura parte da variabilidade dos índices de massa foliar, mas há dispersão significativa em valores altos, sugerindo necessidade de ajustes ou inclusão de variáveis complementares.
 
 ![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/experiment/ml-models-v1-results/projeto/src/metrics/random-forest/graphic_regression_scatter_result.png)
@@ -47,7 +47,7 @@ O modelo apresentou R² = 0.571 no treino e R² = 0.375 no teste, com RMSE de 11
 **Interpretação:**
 O modelo apresenta desempenho moderado na regressão, com tendência a subestimar valores altos. A dispersão indica que o Random Forest captura parte da variabilidade, mas há espaço para ajustes (ex.: tuning de hiperparâmetros ou inclusão de mais variáveis explicativas).
 
-#### Classificação Binária
+### Classificação Binária
 A curva ROC revelou excelente desempenho, com AUC = 0.939 no treino e 0.859 no teste, e acurácia superior a 80%. Isso demonstra alta capacidade de discriminação entre classes, mesmo em cenários com dados heterogêneos.
 
 ![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/experiment/ml-models-v1-results/projeto/src/metrics/random-forest/graphic_binary_classifition_roc_curve_result.png)
@@ -55,7 +55,7 @@ A curva ROC revelou excelente desempenho, com AUC = 0.939 no treino e 0.859 no t
 **Interpretação:**
 Excelente capacidade discriminativa, especialmente no treino. No teste, AUC > 0.85 indica bom desempenho geral, com leve redução, sugerindo generalização adequada.
 
-#### Classificação Multiclasse
+### Classificação Multiclasse
 O modelo manteve consistência, com acurácia de 82% e F1 médio de 0.712 no teste. As curvas ROC para cada classe apresentaram AUC acima de 0.88, reforçando a robustez do algoritmo para diferentes categorias de índices.
 
 ![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/experiment/ml-models-v1-results/projeto/src/metrics/random-forest/graphic_multiclass_classification_roc_curve_result.png)
@@ -70,8 +70,7 @@ A imagem abaixo apresenta o trecho do código em Python utilizado na construçã
 ![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/main/projeto/images/Random%20Forest%201.png)
 
 
-
-### Redes Neurais
+## Redes Neurais
 As **Redes Neurais** foram escolhidas pela sua capacidade de se ajustar a padrões complexos nos dados e pela eficiência no tempo de treinamento. O algoritmo foi treinado com dados tabulados, incluindo estatísticas descritivas dos índices de vegetação e os respectivos índices de massa foliar.
 
 ### Redes Neurais Convolucionais (CNN)
@@ -214,11 +213,13 @@ Ambos os algoritmos foram capazes de extrair padrões relevantes, porém a limit
 
 O planejamento estratégico do projeto previa a execução dos algoritmos em um ambiente **cloud** de alta performance, utilizando o **Amazon SageMaker** com o conjunto de dados (imagens) hospedado no **Amazon Simple Storage Service (S3)**. A integração com o S3 foi concluída com sucesso, estabelecendo-o como a fonte central de dados brutos do projeto.
 
-No entanto, a tentativa de operacionalizar a plataforma de ML na nuvem encontrou um obstáculo: ao criar o domínio necessário para utilizar o SageMaker, a equipe se deparou com um erro de permissão. A conta educacional **AWS LAB**, fornecida pelo convênio com a PUC Minas, não concedia as permissões necessárias para o uso do serviço Amazon SageMaker.
+![Image](https://github.com/user-attachments/assets/4ca20391-63c2-46a1-b89f-54b64bfddcf0)
+
+No entanto, a tentativa de operacionalizar a plataforma de ML na nuvem encontrou um obstáculo: ao criar o domínio necessário para utilizar o SageMaker, a equipe se deparou com um erro de permissão. A conta educacional **AWS LAB**, fornecida pelo convênio com a PUC Minas, não concedia as permissões necessárias para o uso do serviço Amazon SageMaker, conforme imagem abaixo.
+
+![Image](https://github.com/user-attachments/assets/2df2b0a9-d2c7-4061-a84c-41f4ef667a19)
 
 Diante dessa restrição, a equipe decidiu alterar o ambiente de execução. Para garantir o avanço do projeto e a entrega dos resultados, o treinamento dos algoritmos (**Random Forest** e **Redes Neurais**) foi realizado em ambiente **local**, utilizando **Visual Studio Code** e bibliotecas Python equivalentes. Essa decisão permitiu que os processos de pré-processamento, treinamento e avaliação fossem conduzidos de forma eficaz, preservando a integridade metodológica e o cronograma do projeto.
-
----
 
 ## Desafios e Estratégias de Superação
 
@@ -240,8 +241,6 @@ Durante o desenvolvimento, foram enfrentados diversos desafios técnicos e opera
 - **Problema:** Conjunto de imagens limitado, afetando a capacidade preditiva de modelos complexos.
 - **Perspectiva:** Expansão contínua da base de dados em etapas futuras para reavaliação e aperfeiçoamento dos modelos.
 
----
-
 ## Considerações sobre Infraestrutura
 
 Outro fator relevante foi a limitação dos computadores locais, que não possuem alta capacidade de processamento para suportar treinamentos extensivos de redes neurais profundas. Essa restrição impactou:
@@ -252,8 +251,6 @@ Apesar dessas limitações, foram adotadas estratégias para otimizar o desempen
 - Ajuste de hiperparâmetros para reduzir custo computacional.
 - Uso de arquiteturas mais leves para Redes Neurais.
 - Priorização de modelos interpretáveis e eficientes, como Random Forest.
-
----
 
 ## Considerações Finais
 
