@@ -19,15 +19,15 @@ A coleta de dados envolve inicialmente duas fontes principais, que se complement
 - ExR
 - ExB
 
-Esses índices são posteriormente convertidos em valores médios por imagem. Cada registro é vinculado ao piquete correspondente, permitindo rastreabilidade completa entre imagem e análise laboratorial.
+<p align="justify">Esses índices são posteriormente convertidos em valores médios por imagem. Cada registro é vinculado ao piquete correspondente, permitindo rastreabilidade completa entre imagem e análise laboratorial.</p>
 
-O **tratamento de dados** deste projeto é executado em uma máquina local dedicada, escolhida pela sua capacidade de processamento para manipular o volume de imagens de alta resolução, superando as limitações de ambientes de nuvem gratuitos como Google Colab. Os dados são **armazenados e versionados** em um repositório do GitHub, são processados por meio de algoritmos em Python desenvolvidos na IDE **Visual Studio Code**.
+<p align="justify">O <strong>tratamento de dados</strong> deste projeto é executado em uma máquina local dedicada, escolhida pela sua capacidade de processamento para manipular o volume de imagens de alta resolução, superando as limitações de ambientes de nuvem gratuitos como Google Colab. Os dados são <strong>armazenados e versionados</strong> em um repositório do GitHub, são processados por meio de algoritmos em Python desenvolvidos na IDE <strong>Visual Studio Code.</strong></p>
 
-Utilizamos um conjunto de bibliotecas especializadas para todo o fluxo de tratamento: **NumPy** para calcular os índices de vegetação (como GLI e ExG) pixel a pixel e agregar suas médias, **Pandas** para integrar esses resultados com os dados laboratoriais de massa foliar, criando um conjunto consolidado, **Scikit-image** foi aplicada no recorte da imagem e extração das bandas RGB, e por fim **Scikit-learn e Matplotlib** para a análise e modelagem subsequentes. Essa abordagem garante um pipeline robusto, controlado e eficiente, desde a imagem bruta até os dados prontos para análise.
+<p align="justify">Utilizamos um conjunto de bibliotecas especializadas para todo o fluxo de tratamento: <strong>NumPy</strong> para calcular os índices de vegetação (como GLI e ExG) pixel a pixel e agregar suas médias, <strong>Pandas</strong> para integrar esses resultados com os dados laboratoriais de massa foliar, criando um conjunto consolidado, <strong>Scikit-image</strong> foi aplicada no recorte da imagem e extração das bandas RGB, e por fim <strong>Scikit-learn e Matplotlib</strong> para a análise e modelagem subsequentes. Essa abordagem garante um pipeline robusto, controlado e eficiente, desde a imagem bruta até os dados prontos para análise.</p>
 
 ### Governança de Dados
 
-A governança de dados é um componente essencial para assegurar que as informações coletadas sejam confiáveis, rastreáveis, seguras e conformes às regulamentações aplicáveis, como a **LGPD** e a **GDPR**. Além de garantir a proteção de dados pessoais, a governança fornece base para decisões informadas, eficiência operacional e inovação organizacional.
+<p align="justify">A governança de dados é um componente essencial para assegurar que as informações coletadas sejam confiáveis, rastreáveis, seguras e conformes às regulamentações aplicáveis, como a <strong>LGPD</strong> e a <strong>GDPR</strong>. Além de garantir a proteção de dados pessoais, a governança fornece base para decisões informadas, eficiência operacional e inovação organizacional.</p>
 
 #### Princípios e Relevância
 
@@ -53,7 +53,7 @@ Considerando a parceria com o estudo original, os principais requisitos definido
 
 #### Estrutura e Processos de Governança
 
-A governança de dados neste projeto é estruturada para assegurar que todas as etapas do ciclo de vida dos dados — desde a coleta até o armazenamento e processamento — sejam conduzidas de forma segura, organizada e padronizada. Isso inclui:
+<p align="justify">A governança de dados neste projeto é estruturada para assegurar que todas as etapas do ciclo de vida dos dados — desde a coleta até o armazenamento e processamento — sejam conduzidas de forma segura, organizada e padronizada. Isso inclui:</p>
 
 - Manutenção da integridade e consistência das informações;
 - Garantia de rastreabilidade de cada registro até sua fonte original (imagem de celular, análise laboratorial);
