@@ -189,6 +189,25 @@ Ambos os modelos apresentaram resultados satisfatórios, mas com característica
 * **Random Forest** é indicado para cenários que exigem interpretabilidade e menor complexidade computacional.
 * **Redes Neurais** são recomendadas para análises visuais mais sofisticadas, aproveitando sua capacidade de aprender padrões complexos.
 
+Ambos os algoritmos foram capazes de extrair padrões relevantes, porém a limitação do conjunto de dados reduziu o potencial máximo de acurácia da análise, influenciando significativamente a performance dos modelos.
+
+À medida que novas imagens forem incorporadas ao repositório original, espera-se que ambos os algoritmos — especialmente a RNA — possam atingir níveis superiores de precisão e robustez.
+
+## Comparação Geral entre os Modelos
+
+| Critério                         | Random Forest                                           | Redes Neurais (MLP/CNN)                               |
+|---------------------------------|---------------------------------------------------------|-------------------------------------------------------|
+| **Tipo de Dados**               | Tabulados (estatísticas dos índices)                   | Tabulados e imagens multibanda                       |
+| **Complexidade Computacional**  | Baixa a moderada                                       | Alta (especialmente CNNs)                            |
+| **Interpretabilidade**          | Alta (importância das variáveis)                       | Baixa (modelo caixa-preta)                           |
+| **Desempenho em Regressão**     | R² = 0.375 (teste), RMSE = 1444                        | R² entre 0.47 e 0.65 (dependendo da arquitetura)     |
+| **Desempenho em Classificação Binária** | AUC = 0.859, Acc = 81.6%                          | Não aplicado diretamente (CNN para padrões visuais)  |
+| **Desempenho em Multiclasse**   | Acc = 82.1%, F1 = 0.712                                 | Aplicável via CNN, bom para padrões complexos        |
+| **Sensibilidade à Arquitetura** | Baixa (poucos hiperparâmetros críticos)                | Alta (número de camadas e neurônios impacta R²)      |
+| **Robustez contra Overfitting** | Alta (ensemble reduz variância)                        | Moderada (necessário regularização e ajuste fino)    |
+| **Tempo de Treinamento**        | Rápido                                                 | Mais demorado (especialmente com imagens)            |
+| **Aplicabilidade**              | Ideal para dados estruturados e interpretabilidade     | Ideal para padrões visuais complexos                 |
+
 ## Aprendizado de Máquina
 
 Inicialmente, o planejamento estratégico previa a execução dos algoritmos em um ambiente cloud de alta performance, especificamente utilizando o Amazon SageMaker, com o conjunto de dados (imagens) hospedado no Amazon Simple Storage Service (S3).
