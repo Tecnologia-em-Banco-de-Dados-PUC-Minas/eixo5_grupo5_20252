@@ -8,7 +8,7 @@
 
 <p align="justify">O objetivo principal foi identificar padrões entre as características extraídas das imagens de pastagens e os valores de massa foliar obtidos por análise laboratorial, a fim de avaliar o potencial do uso combinado de diferentes fontes de imagem na estimativa da qualidade das pastagens.</p>
 
-<p align="justify">A base de dados utilizada nesta etapa foi derivada do pré-processamento das imagens descrito na **Etapa 3**, organizada em uma tabela estruturada com a biblioteca <b>Pandas</b>.</p>
+<p align="justify">A base de dados utilizada nesta etapa foi derivada do pré-processamento das imagens descrito na <b>Etapa 3</b>, organizada em uma tabela estruturada com a biblioteca <b>Pandas</b>.</p>
 
 Essa tabela é constituída por índices espectrais calculados para cada amostra de imagem e está disponível em um arquivo tabular denominado `path_img_by_lab_sample.csv`.
 
@@ -22,9 +22,9 @@ Esse conjunto de dados funciona como o ponto de partida para o processo de **mod
 Para a etapa de **aprendizado de máquina**, foram explorados três tipos de algoritmos:
 
 ## Random Forest
-Escolhido pelo seu desempenho e simplicidade frente a dados com variáveis correlacionadas de maneira não linear e por oferecer boa interpretabilidade dos resultados. O algoritmo foi treinado com os dados tabulados, incluindo as **Estatísticas descritivas dos índices de vegetação** e os respectivos **índices de massa foliar**.
+<p align="justify">Escolhido pelo seu desempenho e simplicidade frente a dados com variáveis correlacionadas de maneira não linear e por oferecer boa interpretabilidade dos resultados. O algoritmo foi treinado com os dados tabulados, incluindo as <b>Estatísticas descritivas dos índices de vegetação</b> e <b>os respectivos índices de massa foliar</b>.</p>
 
-O algoritmo Random Forest é um método de aprendizado supervisionado baseado em múltiplas árvores de decisão, utilizado para tarefas de classificação e regressão. Sua robustez decorre da combinação de várias árvores, cada uma treinada com subconjuntos aleatórios de dados e atributos, reduzindo o risco de overfitting e aumentando a generalização.
+<p align="justify">O algoritmo Random Forest é um método de aprendizado supervisionado baseado em múltiplas árvores de decisão, utilizado para tarefas de classificação e regressão. Sua robustez decorre da combinação de várias árvores, cada uma treinada com subconjuntos aleatórios de dados e atributos, reduzindo o risco de overfitting e aumentando a generalização.</p>
 
 Como funciona?
 
@@ -36,45 +36,45 @@ Votação das árvores (Classificação) → No caso de classificação, cada á
 
 Média das previsões (Regressão) → Para problemas de regressão, o resultado final é uma média das previsões feitas pelas árvores.
 
-No contexto do projeto Arquitetura de Dados em Nuvem: Análise experimental de comparação entre índices de massa foliar obtidos através de imagens de celular, o Random Forest foi aplicado tanto para regressão quanto para classificação, utilizando dados tabulados derivados das imagens e estatísticas descritivas dos índices de vegetação:
+<p align="justify">No contexto do projeto Arquitetura de Dados em Nuvem: Análise experimental de comparação entre índices de massa foliar obtidos através de imagens de celular, o Random Forest foi aplicado tanto para regressão quanto para classificação, utilizando dados tabulados derivados das imagens e estatísticas descritivas dos índices de vegetação:</p>
 
 
 ### Regressão
-O modelo apresentou R² = 0.571 no treino e R² = 0.375 no teste, com RMSE de 1103 e 1444, respectivamente. Esses resultados indicam que o algoritmo captura parte da variabilidade dos índices de massa foliar, mas há dispersão significativa em valores altos, sugerindo necessidade de ajustes ou inclusão de variáveis complementares.
+<p align="justify">O modelo apresentou R² = 0.571 no treino e R² = 0.375 no teste, com RMSE de 1103 e 1444, respectivamente. Esses resultados indicam que o algoritmo captura parte da variabilidade dos índices de massa foliar, mas há dispersão significativa em valores altos, sugerindo necessidade de ajustes ou inclusão de variáveis complementares.</p>
 
 ![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/experiment/ml-models-v1-results/projeto/src/metrics/random-forest/graphic_regression_scatter_result.png)
 
 **Interpretação:**
-O modelo apresenta desempenho moderado na regressão, com tendência a subestimar valores altos. A dispersão indica que o Random Forest captura parte da variabilidade, mas há espaço para ajustes (ex.: tuning de hiperparâmetros ou inclusão de mais variáveis explicativas).
+<p align="justify">O modelo apresenta desempenho moderado na regressão, com tendência a subestimar valores altos. A dispersão indica que o Random Forest captura parte da variabilidade, mas há espaço para ajustes (ex.: tuning de hiperparâmetros ou inclusão de mais variáveis explicativas).</p>
 
 ### Classificação Binária
-A curva ROC revelou excelente desempenho, com AUC = 0.939 no treino e 0.859 no teste, e acurácia superior a 80%. Isso demonstra alta capacidade de discriminação entre classes, mesmo em cenários com dados heterogêneos.
+<p align="justify">A curva ROC revelou excelente desempenho, com AUC = 0.939 no treino e 0.859 no teste, e acurácia superior a 80%. Isso demonstra alta capacidade de discriminação entre classes, mesmo em cenários com dados heterogêneos.</p>
 
 ![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/experiment/ml-models-v1-results/projeto/src/metrics/random-forest/graphic_binary_classifition_roc_curve_result.png)
 
 **Interpretação:**
-Excelente capacidade discriminativa, especialmente no treino. No teste, AUC > 0.85 indica bom desempenho geral, com leve redução, sugerindo generalização adequada.
+<p align="justify">Excelente capacidade discriminativa, especialmente no treino. No teste, AUC > 0.85 indica bom desempenho geral, com leve redução, sugerindo generalização adequada.</p>
 
 ### Classificação Multiclasse
-O modelo manteve consistência, com acurácia de 82% e F1 médio de 0.712 no teste. As curvas ROC para cada classe apresentaram AUC acima de 0.88, reforçando a robustez do algoritmo para diferentes categorias de índices.
+<p align="justify">O modelo manteve consistência, com acurácia de 82% e F1 médio de 0.712 no teste. As curvas ROC para cada classe apresentaram AUC acima de 0.88, reforçando a robustez do algoritmo para diferentes categorias de índices.</p>
 
 ![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/experiment/ml-models-v1-results/projeto/src/metrics/random-forest/graphic_multiclass_classification_roc_curve_result.png)
 
 **Interpretação:**
-O modelo mantém alta capacidade de separação entre classes, com métricas consistentes entre treino e teste. O F1 indica equilíbrio entre precisão e recall.
+<p align="justify">O modelo mantém alta capacidade de separação entre classes, com métricas consistentes entre treino e teste. O F1 indica equilíbrio entre precisão e recall.</p>
 
-Esses resultados confirmam que o Random Forest é adequado para lidar com dados complexos e não lineares, comuns em imagens agrícolas capturadas por dispositivos móveis, e permite identificar variáveis mais relevantes para a estimativa da massa foliar, fornecendo insights valiosos para práticas de manejo.
+<p align="justify">Esses resultados confirmam que o Random Forest é adequado para lidar com dados complexos e não lineares, comuns em imagens agrícolas capturadas por dispositivos móveis, e permite identificar variáveis mais relevantes para a estimativa da massa foliar, fornecendo insights valiosos para práticas de manejo.</p>
 
-A imagem abaixo apresenta o trecho do código em Python utilizado na construção do modelo de regressão usado. Para avaliar o desempenho dos algoritmos, os dados foram divididos em conjuntos de treinamento e teste (relação 80/20), adotando também validação cruzada para reduzir viés na avaliação.
+<p align="justify">A imagem abaixo apresenta o trecho do código em Python utilizado na construção do modelo de regressão usado. Para avaliar o desempenho dos algoritmos, os dados foram divididos em conjuntos de treinamento e teste (relação 80/20), adotando também validação cruzada para reduzir viés na avaliação.</p>
 
 ![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/main/projeto/images/Random%20Forest%201.png)
 
 
 ## Redes Neurais
-As **Redes Neurais** foram escolhidas pela sua capacidade de se ajustar a padrões complexos nos dados e pela eficiência no tempo de treinamento. O algoritmo foi treinado com dados tabulados, incluindo estatísticas descritivas dos índices de vegetação e os respectivos índices de massa foliar.
+<p align="justify">As **Redes Neurais** foram escolhidas pela sua capacidade de se ajustar a padrões complexos nos dados e pela eficiência no tempo de treinamento. O algoritmo foi treinado com dados tabulados, incluindo estatísticas descritivas dos índices de vegetação e os respectivos índices de massa foliar.</p>
 
 ### Redes Neurais Convolucionais (CNN)
-As **CNNs** foram utilizadas para extrair padrões espaciais e visuais diretamente das imagens, sendo especialmente eficazes na análise de dados visuais complexos. No projeto, as CNNs foram aplicadas para identificar a correlação dos índices de massa foliar com as imagens multibanda, onde cada banda representa um índice de vegetação.
+<p align="justify">As **CNNs** foram utilizadas para extrair padrões espaciais e visuais diretamente das imagens, sendo especialmente eficazes na análise de dados visuais complexos. No projeto, as CNNs foram aplicadas para identificar a correlação dos índices de massa foliar com as imagens multibanda, onde cada banda representa um índice de vegetação.</p>
 
 **Como funcionam as Redes Neurais?**
 
@@ -85,7 +85,7 @@ Cada rede é composta por camadas de neurônios que processam os dados em difere
 Durante o treinamento, os pesos das conexões são ajustados para minimizar o erro entre a previsão e o valor real.
 
 * CNNs:
-Utilizam filtros convolucionais para capturar padrões locais nas imagens, como texturas e variações de cor, fundamentais para estimar a massa foliar.
+<p align="justify">Utilizam filtros convolucionais para capturar padrões locais nas imagens, como texturas e variações de cor, fundamentais para estimar a massa foliar.</p>
 
 #### Influência do Número de Neurônios
 !Gráfico R² vs Número médio de neurônios
@@ -93,7 +93,7 @@ Utilizam filtros convolucionais para capturar padrões locais nas imagens, como 
 ![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/experiment/ml-models-v1-results/projeto/src/metrics/neural-network/graphic_regression_scatter_r2_mean_neu.png)
 
 **Observação:**
-O R² variou entre aproximadamente 0.47 e 0.65, com tendência de concentração entre 0.58 e 0.62 para redes com número médio de neurônios entre 400 e 700.
+<p align="justify">O R² variou entre aproximadamente 0.47 e 0.65, com tendência de concentração entre 0.58 e 0.62 para redes com número médio de neurônios entre 400 e 700.</p>
 
 **Interpretação:**
 Redes muito pequenas ou muito grandes não apresentaram ganhos significativos, indicando que existe um ponto ótimo de complexidade.
@@ -113,19 +113,19 @@ As Redes Neurais, especialmente as CNNs, mostraram-se adequadas para lidar com p
 
 * A arquitetura da rede (número de camadas e neurônios) influencia diretamente o desempenho.
 * O melhor equilíbrio foi obtido com redes de complexidade intermediária.
-* A abordagem baseada em CNNs permite capturar características visuais relevantes para estimar a massa foliar, fornecendo uma solução robusta para análise agrícola.
+<p align="justify">* A abordagem baseada em CNNs permite capturar características visuais relevantes para estimar a massa foliar, fornecendo uma solução robusta para análise agrícola.</p>
 
 A imagem abaixo apresenta o trecho do código em Python utilizado na construção do modelo de redes neurais.
 
 ![Random Forest](https://github.com/Tecnologia-em-Banco-de-Dados-PUC-Minas/eixo5_grupo5_20252/blob/main/projeto/images/Neural%20network%201.png)
 
-Essas ferramentas permitiram a construção de modelos preditivos capazes de estimar os índices de massa foliar com base nas características extraídas das imagens.
+<p align="justify">Essas ferramentas permitiram a construção de modelos preditivos capazes de estimar os índices de massa foliar com base nas características extraídas das imagens.</p>
 
-Essa combinação reforça o caráter exploratório e científico do projeto, buscando explorar qual apresenta o melhor equilíbrio entre desempenho estatístico, estabilidade e aplicabilidade prática no contexto do manejo das pastagens.
+<p align="justify">Essa combinação reforça o caráter exploratório e científico do projeto, buscando explorar qual apresenta o melhor equilíbrio entre desempenho estatístico, estabilidade e aplicabilidade prática no contexto do manejo das pastagens.</p>
 
 ## Avaliação dos Modelos Criados, Métricas Utilizadas e Discussão dos Resultados Obtidos
 
-A avaliação dos modelos foi realizada considerando diferentes abordagens (Random Forest e Redes Neurais) aplicadas aos dados derivados das imagens de celular. Foram utilizadas métricas específicas para **regressão e classificação**, permitindo analisar a capacidade preditiva e discriminativa dos algoritmos.
+<p align="justify">A avaliação dos modelos foi realizada considerando diferentes abordagens (Random Forest e Redes Neurais) aplicadas aos dados derivados das imagens de celular. Foram utilizadas métricas específicas para <b>regressão e classificação</b>, permitindo analisar a capacidade preditiva e discriminativa dos algoritmos.</p>
 
 **Métricas Utilizadas**
 
@@ -150,7 +150,7 @@ A avaliação dos modelos foi realizada considerando diferentes abordagens (Rand
 * Treino: R² = 0.571 | RMSE = 1103 | MAE = 720
 * Teste: R² = 0.375 | RMSE = 1444 | MAE = 931
 
-O modelo apresentou desempenho moderado, capturando parte da variabilidade dos índices de massa foliar, mas com dispersão significativa em valores altos.
+<p align="justify">O modelo apresentou desempenho moderado, capturando parte da variabilidade dos índices de massa foliar, mas com dispersão significativa em valores altos.</p>
 
 **Classificação Binária:**
 
@@ -174,7 +174,7 @@ O modelo manteve consistência entre treino e teste, com bom equilíbrio entre p
 
 * Redes muito rasas ou muito profundas não apresentaram ganhos significativos.
 
-As Redes Neurais mostraram maior capacidade de ajuste a padrões complexos, mas exigem cuidado na definição da arquitetura para evitar sobreajuste ou subajuste. CNNs foram eficazes na extração de padrões visuais, reforçando sua aplicabilidade em imagens agrícolas.
+<p align="justify">As Redes Neurais mostraram maior capacidade de ajuste a padrões complexos, mas exigem cuidado na definição da arquitetura para evitar sobreajuste ou subajuste. CNNs foram eficazes na extração de padrões visuais, reforçando sua aplicabilidade em imagens agrícolas.</p>
 
 **Comparação Geral**
 
@@ -188,9 +188,9 @@ Ambos os modelos apresentaram resultados satisfatórios, mas com característica
 * **Random Forest** é indicado para cenários que exigem interpretabilidade e menor complexidade computacional.
 * **Redes Neurais** são recomendadas para análises visuais mais sofisticadas, aproveitando sua capacidade de aprender padrões complexos.
 
-Ambos os algoritmos foram capazes de extrair padrões relevantes, porém a limitação do conjunto de dados reduziu o potencial máximo de acurácia da análise, influenciando significativamente a performance dos modelos.
+<p align="justify">Ambos os algoritmos foram capazes de extrair padrões relevantes, porém a limitação do conjunto de dados reduziu o potencial máximo de acurácia da análise, influenciando significativamente a performance dos modelos.</p>
 
-À medida que novas imagens forem incorporadas ao repositório original, espera-se que ambos os algoritmos — especialmente a RNA — possam atingir níveis superiores de precisão e robustez.
+<p align="justify">À medida que novas imagens forem incorporadas ao repositório original, espera-se que ambos os algoritmos — especialmente a RNA — possam atingir níveis superiores de precisão e robustez.</p>
 
 ## Comparação Geral entre os Modelos
 
@@ -211,15 +211,15 @@ Ambos os algoritmos foram capazes de extrair padrões relevantes, porém a limit
 
 ## Planejamento Inicial e Ajustes Necessários
 
-O planejamento estratégico do projeto previa a execução dos algoritmos em um ambiente **cloud** de alta performance, utilizando o **Amazon SageMaker** com o conjunto de dados (imagens) hospedado no **Amazon Simple Storage Service (S3)**. A integração com o S3 foi concluída com sucesso, estabelecendo-o como a fonte central de dados brutos do projeto.
+<p align="justify">O planejamento estratégico do projeto previa a execução dos algoritmos em um ambiente <b>cloud</b> de alta performance, utilizando o <b>Amazon SageMaker</b> com o conjunto de dados (imagens) hospedado no <b>Amazon Simple Storage Service (S3)</b>. A integração com o S3 foi concluída com sucesso, estabelecendo-o como a fonte central de dados brutos do projeto.</p>
 
 ![Image](https://github.com/user-attachments/assets/4ca20391-63c2-46a1-b89f-54b64bfddcf0)
 
-No entanto, a tentativa de operacionalizar a plataforma de ML na nuvem encontrou um obstáculo: ao criar o domínio necessário para utilizar o SageMaker, a equipe se deparou com um erro de permissão. A conta educacional **AWS LAB**, fornecida pelo convênio com a PUC Minas, não concedia as permissões necessárias para o uso do serviço Amazon SageMaker, conforme imagem abaixo.
+<p align="justify">No entanto, a tentativa de operacionalizar a plataforma de ML na nuvem encontrou um obstáculo: ao criar o domínio necessário para utilizar o SageMaker, a equipe se deparou com um erro de permissão. A conta educacional <b>AWS LAB</b>, fornecida pelo convênio com a PUC Minas, não concedia as permissões necessárias para o uso do serviço Amazon SageMaker, conforme imagem abaixo.</p>
 
 ![Image](https://github.com/user-attachments/assets/2df2b0a9-d2c7-4061-a84c-41f4ef667a19)
 
-Diante dessa restrição, a equipe decidiu alterar o ambiente de execução. Para garantir o avanço do projeto e a entrega dos resultados, o treinamento dos algoritmos (**Random Forest** e **Redes Neurais**) foi realizado em ambiente **local**, utilizando **Visual Studio Code** e bibliotecas Python equivalentes. Essa decisão permitiu que os processos de pré-processamento, treinamento e avaliação fossem conduzidos de forma eficaz, preservando a integridade metodológica e o cronograma do projeto.
+<p align="justify">Diante dessa restrição, a equipe decidiu alterar o ambiente de execução. Para garantir o avanço do projeto e a entrega dos resultados, o treinamento dos algoritmos (<b>Random Forest</b> e <b>Redes Neurais</b>) foi realizado em ambiente <b>local</b>, utilizando <b>Visual Studio Code</b> e bibliotecas Python equivalentes. Essa decisão permitiu que os processos de pré-processamento, treinamento e avaliação fossem conduzidos de forma eficaz, preservando a integridade metodológica e o cronograma do projeto.</p>
 
 ## Desafios e Estratégias de Superação
 
@@ -254,9 +254,9 @@ Apesar dessas limitações, foram adotadas estratégias para otimizar o desempen
 
 ## Considerações Finais
 
-A implementação das abordagens de aprendizado de máquina representou um avanço significativo no projeto, permitindo integrar dados visuais e laboratoriais em um fluxo analítico coerente.
+<p align="justify">A implementação das abordagens de aprendizado de máquina representou um avanço significativo no projeto, permitindo integrar dados visuais e laboratoriais em um fluxo analítico coerente.</p>
 
-Mesmo diante das dificuldades técnicas e da limitação da base de dados, foi possível estruturar modelos capazes de gerar estimativas iniciais da massa foliar com base nas características espectrais das imagens.
+<p align="justify">Mesmo diante das dificuldades técnicas e da limitação da base de dados, foi possível estruturar modelos capazes de gerar estimativas iniciais da massa foliar com base nas características espectrais das imagens.</p>
 
 Os resultados parciais obtidos nesta etapa serão aprofundados nas próximas fases, incluindo:
 - **Métricas de desempenho detalhadas**
