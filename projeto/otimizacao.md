@@ -1,6 +1,6 @@
 # **Otimização**
 
-A etapa de otimização teve como objetivo confrontar o planejamento de governança de dados estabelecido no início do projeto com as ações efetivamente adotadas ao longo do desenvolvimento. Esse processo permitiu identificar lacunas, validar práticas, aprimorar procedimentos e registrar melhorias aplicadas até o momento — além de apontar direções futuras que podem potencializar o crescimento operacional e científico da solução.
+<p align="justify">A etapa de otimização teve como objetivo confrontar o planejamento de governança de dados estabelecido no início do projeto com as ações efetivamente adotadas ao longo do desenvolvimento. Esse processo permitiu identificar lacunas, validar práticas, aprimorar procedimentos e registrar melhorias aplicadas até o momento — além de apontar direções futuras que podem potencializar o crescimento operacional e científico da solução.</p>
 
 ## **6.1 Governança dos Dados: Planejado x Executado**
 Durante a segunda etapa do projeto, foi elaborado um plano de governança pautado nos princípios de:
