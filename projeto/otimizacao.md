@@ -1,4 +1,4 @@
-# **ETAPA 6 - Otimização**
+# **Otimização**
 
 A etapa de otimização teve como objetivo confrontar o planejamento de governança de dados estabelecido no início do projeto com as ações efetivamente adotadas ao longo do desenvolvimento. Esse processo permitiu identificar lacunas, validar práticas, aprimorar procedimentos e registrar melhorias aplicadas até o momento — além de apontar direções futuras que podem potencializar o crescimento operacional e científico da solução.
 
@@ -18,6 +18,7 @@ Ao longo do desenvolvimento, esse planejamento foi refletido nas ações adotada
 - Ações corretivas como recorte padronizado e normalização para garantir consistência
 
 ### **Integridade e qualidade dos dados**
+
 Apesar da preservação da integridade, foram identificadas inconsistências operacionais relacionadas a:
 - Distância variável da câmera em relação ao solo
 - Variação excessiva de luminosidade
