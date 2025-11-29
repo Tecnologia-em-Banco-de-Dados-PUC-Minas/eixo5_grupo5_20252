@@ -35,7 +35,7 @@ Essa ação aumentou a confiabilidade dos índices **GLI, MPRI, ExG, ExR e ExB**
 
 ## **6.2 Pontos de Melhoria Identificados**
 
-### **1. Aumento da Base de Dados**
+### **6.2.1. Aumento da Base de Dados**
 Com maior volume de imagens, é esperado:
 - Melhor capacidade de aprendizado da rede neural
 - Redução no erro absoluto
@@ -47,7 +47,7 @@ Além disso, com expansão do dataset será possível:
 - Comparar estação seca vs. estação chuvosa
 - Correlacionar fatores meteorológicos
 
-### **2. Intervalo Temporal dos Dados**
+### **6.2.2. Intervalo Temporal dos Dados**
 Definição clara do período de coleta das imagens, incluindo:
 - Data exata
 - Horário da captura
@@ -59,7 +59,7 @@ Essa contextualização permitirá análises avançadas como:
 - Oscilações sazonais
 - Taxas de regeneração do pasto
 
-### **3. Padronização da Coleta de Dados**
+### **6.2.3. Padronização da Coleta de Dados**
 Proposta de criação de protocolo operacional:
 - Uso do mesmo modelo de celular, quando possível
 - Altura fixa da câmera em relação ao solo
